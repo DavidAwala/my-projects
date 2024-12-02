@@ -3,10 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-link {
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #3498db;
+            transform: translateY(-5px);
+        }
+
+        .project-link:active {
+            transform: translateY(2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .project-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .project-link {
+                font-size: 1em;
+                padding: 15px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello world</h1>
-        <a href="animation/practice2.html">first project </a>
+    <div>
+        <h1>Welcome to My Github Portfolio</h1>
+        <p>Check out my small projects below:</p>
+        <div class="project-links">
+            <a href="animation/practice2.html" class="project-link">Project 1</a>
+            <a href="java/java.html" class="project-link">Project 2</a>
+            <a href="work4/work4.html" class="project-link">Project 3</a>
+            <a href="proadcast/proadcast.html" class="project-link">Project 4</a>
+            <a href="practice/practice.html" class="project-link">Project 5</a>
+            <a href="work14/work14.html" class="project-link">Project 6</a>
+            <a href="work12/work12.html" class="project-link">Project 7</a>
+            <a href="work11/work11.html" class="project-link">Project 8</a>
+            <a href="work10/work10.html" class="project-link">Project 9</a>
+            <a href="work9/work9.html" class="project-link">Project 10</a>
+            <a href="work8/work8.html" class="project-link">Project 11</a>
+            <a href="work3/work3.html" class="project-link">Project 12</a>
+            <a href="work5/work5.html" class="project-link">Project 13</a>
+            <a href="work1/work1.html" class="project-link">Project 14</a>
+        </div>
+    </div>
 </body>
 </html>
+
