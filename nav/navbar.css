@@ -1,0 +1,57 @@
+body{background-image: url(anime.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: top;
+     background-size: cover;
+     margin: 0cm;
+    }
+
+marquee{font-size: 3em;
+        color: aliceblue;
+     background-color: black;
+     }
+
+div{background: transparent;
+     height: 100vh;
+     border: 1px solid rgba(12, 10, 10, 0.514);
+     backdrop-filter: blur(10px);
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     }
+
+.form{background: rgb(235, 235, 235);
+      height: 230px;
+      width: 230px;
+     padding: 1em;
+     overflow: hidden;
+     border: 3px solid black;
+     box-shadow: 6px 7px 12px #313131;
+     
+     }
+
+.form input{padding: 0.5em;
+            width: 17em;
+            background-color: rgb(78, 75, 75);
+           color: white;
+           text-decoration: solid;
+           border-radius: 10px;
+           cursor: text;}
+          
+.form label{padding:em;}
+
+#button{padding: 5px;
+        background-color: bisque;
+        text-decoration: solid;
+        color: black;
+        border-radius: 0px;
+        cursor: pointer;
+        }
+
+#submit{background-color: beige;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 20px;
+        cursor: pointer;}
+        
