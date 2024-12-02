@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidenavbar</title>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+.container{
+    
+   position: fixed; 
+color:white;
+background-color: blue;
+height:100%;
+width:250px;
+z-index: 1;
+transition: all .5s ease;
+left: -250px;
+}
+#ck{
+    color:red;
+}
+h1{
+    text-align: center;
+    font-weight: 500px;
+    line-height: 50px;
+display:block;
+text-align: center;
+}
+ul li a{
+    text-align: center;
+  line-height: 100px;
+color:white;
+text-decoration:none;
+font-style: none;
+}
+#check{
+    visibility: hidden;
+}
+label #cross,#bar{
+ color:white;
+ background-color: blue;
+    position: absolute;
+    font-size:20px;
+    font-weight: bolder;
+    left: 2%;
+    z-index: 1111;
+    top:2%;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+
+label #cross{
+ color:white;
+ background-color: blue;
+ padding: 6px 10px; 
+ border-radius:12px;
+ font-weight: 700px;  
+margin-left: 55px;
+left:       130px;
+visibility: hidden;
+transition: all .4s ease;
+z-index: 12;
+}
+
+
+
+label #bar{
+ color:white;
+ background-color: blue;
+ padding: 6px 10px; 
+ border-radius:12px;
+ font-weight: 500px;  
+z-index: 1;
+}
+#check:checked ~ .container{
+left: 0;
+}
+#check:checked ~ label #cross{
+visibility: visible;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="check" >
+    <label for="check">
+        <span id="cross">&#9747</span>
+        <span id="bar">&#9776</span>
+    </label>
+    <div class="container">
+       
+
+        <h1>vi <span id="ck">ck</span></h1>
+        <ul>
+            <li><a href="#">home</a></li>   
+            <li><a href="#">about us </a></li>   
+            <li><a href="#">purchase</a></li>   
+            <li><a href="#">contact us </a></li>
+            <li><a href="#">items</a></li>   
+                <li><a href="#">login</a></li>      
+        </ul>
+        
+    </div>
+</body>
+</html>

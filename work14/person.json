@@ -1,0 +1,6 @@
+{
+    "name": "sponge",
+    "age":30,
+    "isjob": true,
+    "hobbies":["jellyfishing","play","eat","cook"]
+}

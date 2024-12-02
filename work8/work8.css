@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #663399;
+    font-family: sans-serif;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 6em;
+    padding: 8px;
+    color: white;
+    background: black;
+    width: 100%;
+}

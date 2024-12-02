@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(165, 42, 42, 0.623);
+    width: 100%;
+    height: 50px;
+}
+nav #ox li{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(165, 42, 42, 0.863);
+    position: relative;
+    width: 20em;
+    height: 3em;
+    left: 0px;
+    bottom: -33px;
+    padding: 30px; 
+    z-index: 2;
+    transition: all .10 ease-in ;
+}
+#ox li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 100%;
+    
+}
+span{
+    position: absolute;
+    left: 290px;
+    font-size: 100lvh;
+    color: azure;
+}
+#ox{
+    display: none;
+}
+span:hover+#ox{
+    
+    display: block;
+    
+}
+
+
+nav h4{
+    position: relative;
+    font-size: 2em;
+    top: -40px;
+    margin-left: 9px;
+}
+
+
+/*main body*/
+
+.one{
+    border: 2px solid rgba(17, 226, 122, 0.76);
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    margin-top: 10em;
+    width: 100%;
+    height: fit-content;
+    background: rgba(165, 42, 42, 0.363);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 7px 2px 10px black;
+}
+.one img{
+    border: 3px solid rgba(17, 226, 122, 0.76);
+    position: relative;
+    margin-top: 2em;
+    width: 19em;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.text{
+    font-weight: 510;
+    text-align: center;
+    padding: 2px;
+    font-size: 1.1em;
+    text-wrap: wrap;
+    word-spacing: 2px;
+    line-height: 1.4em;
+}
+
+.stl,.origin,.life,.news{
+    border: 2px solid rgba(17, 226, 122, 0.76);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-top: 10em;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 7px 2px 10px black;
+    background-color:  rgba(165, 42, 42, 0.363);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.stl #head{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+.stl p{
+    margin: 1px;
+    text-align: inherit;
+    font-size: 1.2em;
+}
+.origin{
+
+}
+.life{
+
+}
+.news{
+
+}

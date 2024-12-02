@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: rgb(252, 253, 253);
+    gap: 5vw;
+}
+.ani_card,
+.ani_card2{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 500px;
+    width: 350px;
+    background: #222;
+    border-radius: 10px;
+    cursor: pointer;
+}
+span{
+    color: #3f3f3f;
+    font-size: 10em;
+    z-index: 1;
+}
+.ani_card::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 350px;
+    background: tomato;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 0.3s;
+    animation: ani 2s linear infinite;
+}
+.ani_card:hover::before{
+    height: 512px;
+    width: 362px;
+}
+@keyframes ani {
+    50%{
+        filter: hue-rotate(350deg);
+    }  
+}
+.ani_card2{
+    overflow: hidden;
+
+}
+.ani_card2::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 180%;
+    background: white;
+    transform: rotate(45deg);
+    
+}
+.ani_card2:hover::before{
+    animation: ani2 3s linear infinite;
+}
+@keyframes ani2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ani_card2::after{
+    position: absolute;
+    content: '';
+    inset: 5px;
+    background: #222;
+    border-radius: 8px;
+}

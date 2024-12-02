@@ -1,0 +1,45 @@
+
+
+*{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  background-color: rgb(46, 44, 20);
+}
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width: 50%;
+  height: 100vh;
+  border-radius: 48%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  flex-direction: column;
+}
+input{
+  background-color: white;
+  width: 30vw;
+  border-radius: 30px;
+  letter-spacing: 3px;
+  padding-left: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+button{
+  background-color: rgb(226, 226, 226);
+  border: 3px solid black;
+  padding: 1em;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+img{
+width: 30%;
+}

@@ -1,0 +1,63 @@
+*{
+    padding: 0ch;
+    margin: 0cm;
+}
+body{
+    background-image: url(2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    box-sizing: border-box;
+}
+div{
+    background-color: rgb(165, 95, 15);
+    text-align: center;
+    font-weight: bolder;
+}
+div ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: azure;
+} 
+div ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, div ul li:hover{
+    background-color:  rgb(224, 123, 7);
+    border-radius: 4px;
+}
+.about{
+    display: none;
+}
+div ul li:hover .about{
+    display: block;
+    position: absolute;}
+    
+div ul li:hover .about ul{
+    display: block;
+    
+}
+div ul li:hover .about ul li{
+    border-bottom: 2px solid wheat;
+    background: transparent;
+    text-align: left;
+} 
+div ul li:hover .about ul li a:hover{
+    color:  rgb(255, 209, 82);;
+}
+.about2{
+    display: none;
+}
+.mark:hover .about2{
+display: block;
+position: absolute;
+margin-left: -140px;
+
+}
